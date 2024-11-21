@@ -680,4 +680,67 @@ a {
   }
 }
 
+/* -----------------------------------why choose us---------------------------------------------------- */
+
+#why-choose-us {
+  background-color: #f8f9fa; 
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.why-choose-card {
+  height: 100%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1.3rem;
+  color: black;
+}
+
+.why-choose-card {
+  border: 0;
+  box-shadow: 0 4px 8px #FF5349; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: linear-gradient(135deg, #cf6964, #FF3D36);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(255, 0, 0, 0.3);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col-md-3,
+.col-sm-6 {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .col-md-3 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+
 /* ======================================================================================================== */
