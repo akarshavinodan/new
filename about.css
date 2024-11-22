@@ -42,6 +42,18 @@
 * {
     font-family: 'Montserrat';
   }
+
+.animate {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease-in-out;
+  }
+  
+  .animate.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
   
   .responsive-container-block {
     min-height: 75px;
