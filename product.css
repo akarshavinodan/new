@@ -37,3 +37,164 @@
     color: #FF5349 !important;
   }
   
+
+  /* ====================================================================================================== */
+  .video-section {
+    margin: 0;
+    width: 100%;
+    margin-top: 5%;
+    overflow: hidden; 
+  }
+  
+  .video-section video {
+    width: 100%;
+    height: auto; 
+    display: block; 
+  }
+
+  /* =================================================================================================== */
+ 
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 10%;
+}
+
+/* Service Cards */
+.product-card {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  height: 450px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: linear-gradient(145deg, #ffffff, #e9ecef);
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.1), -6px -6px 15px rgba(255, 255, 255, 0.5);
+  transition: transform 1s ease, box-shadow 1s ease;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.2), -8px -8px 20px rgba(255, 255, 255, 0.7);
+}
+
+/* Background Image */
+.product-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  filter: brightness(60%);
+  transition: filter 0.4s ease;
+}
+
+.product-card:hover img {
+  filter: brightness(75%);
+}
+
+/* Gradient Overlay */
+.product-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
+  z-index: 2;
+  opacity: 0.8;
+}
+
+/* Card Content */
+.card-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 3;
+  color: #fff;
+  animation: fadeInUp 15s ease forwards;
+}
+
+.card-content h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.card-content p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.card-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.card-content ul li {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.hd{
+  background-color: #FF5349;
+}
+
+.card-content ul li::before {
+  content: "✔";
+  /* color: #28a745; */
+  color: #FF5349;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+/* Hover Button Effect */
+.card-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 15px;
+  background: #FF5349;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.card-btn:hover {
+  background: #FF5349;
+  transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .service-card {
+      max-width: 90%;
+  }
+}
