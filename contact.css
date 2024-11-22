@@ -1,25 +1,40 @@
-body {
-    font-family: 'Montserrat';
-    background-color: #f8f9fa;
-}
-.navbar {
-    background-color: #ffffff; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    z-index: 1030;
+:root {
+    --primary-color: #000000;
+    --secondary-color: #fefefe;
   }
   
-  .navbar .nav-link {
-    color: #333333; 
+  body {
+    font-family: 'Montserrat';
+    margin: 0;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
+  
+  .navbar {
+    background-color: var(--primary-color);
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white !important;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .navbar-brand img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .nav-link {
+    color: white !important;
     transition: color 0.3s ease;
   }
   
-  .navbar .nav-link:hover {
-    color: black; 
-  }
-  
-  .navbar-toggler {
-    border-color: #cccccc;
-    background-color: #333333;
+  .nav-link:hover {
+    color: #FF5349 !important;
   }
   
   .contact{
