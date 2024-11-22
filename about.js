@@ -22,3 +22,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }, delay * 1000); // Convert seconds to milliseconds
   });
 });
+
+
