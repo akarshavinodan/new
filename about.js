@@ -9,3 +9,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }, delay * 1500); 
   });
 });
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const animatedElements = document.querySelectorAll(".animate");
+
+  animatedElements.forEach((element) => {
+    const delay = element.getAttribute("data-delay");
+    setTimeout(() => {
+      element.classList.add("visible");
+    }, delay * 1000); // Convert seconds to milliseconds
+  });
+});
