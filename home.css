@@ -120,7 +120,41 @@ body {
 
 /* ---------------------------------------------about section----------------------------------------------------------- */
 
+.vision-section, .story-section {
+  padding: 60px 20px;
+  background: #f8f9fa;
+}
 
+.vision-section {
+  background: black;
+  color: #FF5349;
+}
+
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.section-content {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #FF5349;
+}
+
+.decorative-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #FF5349;
+  text-align: center;
+}
 /* ---------------------------------------------------vision----------------------------------------------- */
 
 .text-blk {
@@ -155,6 +189,7 @@ margin-right: auto;
 margin-bottom: 0px;
 margin-left: auto;
 justify-content: flex-start;
+overflow: hidden;
 }
 
 .responsive-container-block.bigContainer {
@@ -179,9 +214,7 @@ margin: 0 0 0 0;
 max-width: 1320px;
 align-items: center;
 justify-content: center;
-margin-top: 80px;
 margin-right: auto;
-margin-bottom: 80px;
 margin-left: auto;
 padding-top: 10px;
 padding-right: 0px;
@@ -258,8 +291,8 @@ min-height: auto;
   margin-right: 78%;
   margin-bottom: 25%;
   margin-left: -80px;
-  height: 40%; /* Increased size */
-  width: 30%; /* Increased size */
+  height: 40%; 
+  width: 30%; 
   position: absolute;
 }
 
@@ -268,8 +301,8 @@ min-height: auto;
   margin-right: 40%;
   margin-bottom: 38%;
   margin-left: 20%;
-  width: 40%; /* Increased size */
-  height: 45%; /* Increased size */
+  width: 40%; 
+  height: 45%; 
   position: absolute;
 }
 
@@ -278,8 +311,8 @@ min-height: auto;
   margin-right: 60%;
   margin-bottom: 26%;
   margin-left: 20%;
-  width: 18%; /* Increased size */
-  height: 28%; /* Increased size */
+  width: 18%; 
+  height: 28%; 
   position: absolute;
 }
 
@@ -288,8 +321,8 @@ min-height: auto;
   margin-right: 24%;
   margin-bottom: 0;
   margin-left: 40%;
-  width: 40%; /* Increased size */
-  height: 40%; /* Increased size */
+  width: 40%; 
+  height: 40%; 
   position: absolute;
 }
 
@@ -298,8 +331,8 @@ min-height: auto;
   margin-right: 24%;
   margin-bottom: 37%;
   margin-left: 62%;
-  width: 18%; /* Increased size */
-  height: 28%; /* Increased size */
+  width: 18%; 
+  height: 28%; 
   position: absolute;
 }
 
@@ -308,8 +341,8 @@ min-height: auto;
   margin-right: 0%;
   margin-bottom: 62%;
   margin-left: 62%;
-  width: 40%; /* Increased size */
-  height: 38%; /* Increased size */
+  width: 40%; 
+  height: 38%; 
   position: absolute;
 }
 
@@ -318,8 +351,8 @@ min-height: auto;
   margin-right: 0;
   margin-bottom: 14%;
   margin-left: 82%;
-  width: 30%; /* Increased size */
-  height: 48%; /* Increased size */
+  width: 30%; 
+  height: 48%; 
   position: absolute;
 }
 .number8img{
